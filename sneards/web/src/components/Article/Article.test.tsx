@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import HomePagePage from './HomePagePage'
+import Article from './Article'
 
 //   Improve this test with help from the Redwood Testing Doc:
-//   https://redwoodjs.com/docs/testing#testing-pages-layouts
+//    https://redwoodjs.com/docs/testing#testing-components
 
-describe('HomePagePage', () => {
+describe('Article', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<HomePagePage />)
+      render(<Article />)
     }).not.toThrow()
   })
 })
