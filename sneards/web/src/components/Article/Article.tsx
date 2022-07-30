@@ -8,15 +8,31 @@ interface Props {
 
 const Article = ({ article }: Props) => {
   return (
-    <article>
-      <header>
-        <h2>
-          <Link to={routes.article({ id: article.id })}>{article.title}</Link>
-        </h2>
-      </header>
-      <div>{article.body}</div>
-      <div>Posted at: {article.createdAt}</div>
-    </article>
+    <div>
+        <li className="swiper-slide">
+          <a
+            href="/product/smart-watch"
+            className="block"
+          >
+            <div>
+              <p className="text-xs text-indigo-500">
+                placeholder
+              </p>
+
+              <h5 className="font-bold">
+                {article.title}
+
+              </h5>
+            </div>
+
+            <p className="mt-1 text-sm font-medium text-gray-700">
+              {article.createdAt}
+            </p>
+          </a>
+        </li>
+
+       
+    </div>
   )
 }
 

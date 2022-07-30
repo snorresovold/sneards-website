@@ -24,10 +24,11 @@ export const Failure = ({ error }: CellFailureProps) => (
 
 export const Success = ({ articles }: CellSuccessProps<ArticlesQuery>) => {
   return (
-    <>
+    <div className="grid grid-cols-2 grid-rows-1 mt-8 lg:grid-cols-4 gap-x-4 gap-y-8">
+
       {articles.map((article) => (
         <Article key={article.id} article={article} />
       ))}
-    </>
+    </div>
   )
 }
