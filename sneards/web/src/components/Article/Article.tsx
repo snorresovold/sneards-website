@@ -9,11 +9,9 @@ interface Props {
 const Article = ({ article }: Props) => {
   return (
     <div>
-        <li className="swiper-slide">
-          <a
-            href="/product/smart-watch"
-            className="block"
-          >
+        <Link
+          to={routes.article({ id: article.id })}
+        >
             <div>
               <p className="text-xs text-indigo-500">
                 placeholder
@@ -28,10 +26,7 @@ const Article = ({ article }: Props) => {
             <p className="mt-1 text-sm font-medium text-gray-700">
               {article.createdAt}
             </p>
-          </a>
-        </li>
-
-       
+          </Link>
     </div>
   )
 }
