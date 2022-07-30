@@ -15,7 +15,7 @@ const HomepagePage = () => {
 
               <span className="sm:block">
                 IT Development.
-              </span>
+             </span>
 
               <span className='sm:block'>
                 New posts
