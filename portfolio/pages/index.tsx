@@ -7,13 +7,7 @@ import { sortByDate } from '../utils'
 export default function Home({ posts }: any) {
   return (
     <div>
-
-
-      <div className='posts'>
-        {posts.map((post: any, index: any) => (
-          <Post key={index} post={post} />
-        ))}
-      </div>
+      
     </div>
   )
 }
