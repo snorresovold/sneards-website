@@ -1,8 +1,16 @@
 export default {
     en: {
-        text: "english"
+        navItems: [
+            { text: "Projects", to: "Projects"},
+            { text: "About me", to: "About"},
+            { text: "Contact me", to: "Contact"},
+        ]
     },
     no: {
-        text: "norwegian"
-    }
+        navItems: [
+            { text: "Prosjekter", to: "Projects"},
+            { text: "Om meg", to: "About"},
+            { text: "Kontakt meg", to: "Contact"},
+        ]
+    },
 }
