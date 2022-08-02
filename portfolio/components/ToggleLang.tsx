@@ -8,13 +8,13 @@ function ToggleLang() {
     const { lang, setLang } = React.useContext(LangContext);
     return (
         <div>
-        {lang === "en"? (
+        {lang === "no"? (
             <button onClick={() => setLang(lang === 'no' ? 'en' : 'no')} className="inline-block p-3 text-white bg-indigo-600 border border-indigo-600 rounded-full hover:bg-transparent hover:text-indigo-600 active:text-indigo-500 focus:outline-none focus:ring">
             🇳🇴
             </button>       
         ) : (
             <button onClick={() => setLang(lang === 'no' ? 'en' : 'no')} className="inline-block p-3 text-indigo-600 border border-indigo-600 rounded-full hover:text-white hover:bg-indigo-600 active:bg-indigo-500 focus:outline-none focus:ring">
-            🇦🇫
+            🇺🇸
             </button>
         )}
         </div>

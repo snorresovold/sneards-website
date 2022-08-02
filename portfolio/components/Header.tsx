@@ -25,9 +25,9 @@ export default function Header() {
                     <li>
                         <a className="nav-txt" href="/">
                         {lang === "no" ? (
-                            <h1>{content.en.text}</h1>
-                        ): (
                             <h1>{content.no.text}</h1>
+                        ): (
+                            <h1>{content.en.text}</h1>
                         )}
                         </a>
                     </li>

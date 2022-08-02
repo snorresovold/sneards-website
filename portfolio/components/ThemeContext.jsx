@@ -6,7 +6,7 @@ const getInitialTheme = () => {
     if (typeof storedPrefs === 'string') {
       return storedPrefs;
     }
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (('(prefers-color-scheme: dark)').match) {
       return 'dark';
     }
   }
