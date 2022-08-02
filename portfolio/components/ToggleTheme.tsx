@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeContext } from './ThemeContext';
 
-const Toggle = () => {
+const ToggleTheme = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
 
   return (
@@ -51,4 +51,4 @@ const Toggle = () => {
   );
 };
 
-export default Toggle;
+export default ToggleTheme;
