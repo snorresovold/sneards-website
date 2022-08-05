@@ -3,11 +3,24 @@ import path from 'path'
 import matter from 'gray-matter'
 import Post from '../components/Post'
 import { sortByDate } from '../utils'
+import content from '../public/content/content'
+import React, { useState, useEffect } from "react"
+import { LangContext } from '../components/LangContext'
 
 export default function Home({ posts }: any) {
+  const [animated, setAnimated] = useState(false);
+  const { lang, SetLang } = React.useContext(LangContext);
+  useEffect(() => {
+    setAnimated(true);
+  }, []);
+
   return (
     <div>
-
+       {lang === "no" ? (
+        <div>norge</div>
+       ) : (
+        <div>english</div>
+       )}
     </div>
   )
 }
