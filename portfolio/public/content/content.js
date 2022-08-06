@@ -13,4 +13,18 @@ export default {
             { text: "Kontakt meg", to: "Contact"},
         ]
     },
+    header: {
+      img:
+        '/images/Snorre.png',
+      text: ['Hallo!', "Eg er Snorre Søvold.", 'Eg er '],
+      typical: [
+        'IT elev. 💻',
+        2000,
+        'Youtuber. 📹',
+        2000,
+        'Koder. ',
+        2000
+      ],
+      btnText: 'Hva kan jeg?',
+    },
 }
