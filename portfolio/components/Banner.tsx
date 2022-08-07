@@ -22,7 +22,16 @@ export default function Header() {
               placeholderSrc={process.env.PUBLIC_URL + '/logo512.png'}
             />
         </div>
-        <div className="text-white font-dosis text-center md:text-left">
+        <div className="dark:text-white text-gray-900 font-dosis text-center md:text-left">
+        <h2
+            className={`${
+              animated ? '' : 'translate-y-10 opacity-0'
+            }  transform transition duration-2000 ease-in-out text-3xl md:text-5xl font-bold`}
+          >
+            {content.header.text[0]}
+            <br />
+            {content.header.text[1]}
+          </h2>
           <ScrollLink to="stack" smooth={true}>
             <button className=" animate-float bg-indigo-500 px-10 py-3 text-xl uppercase mt-10 rounded-lg">
               {content.header.btnText}
