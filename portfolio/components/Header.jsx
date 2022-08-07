@@ -13,7 +13,7 @@ export default function Header() {
     
     return (
         <div>
-            <header className='bg-white dark:bg-gray-900 mb-10 flex text-center'>
+            <header className='bg-white dark:bg-gray-900 flex text-center'>
                 <div className='flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto sm:px-6 lg:px-8 font-dosis'>
                     <Link href='/'>
                         <h2 className='cursor-pointer text-l text-gray-500 dark:text-white dark:hover:text-white/75 transition hover:text-gray-500/75'>Snorre Søvold</h2>

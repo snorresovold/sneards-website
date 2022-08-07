@@ -13,9 +13,7 @@ function MyApp({ Component, pageProps }) {
             <title>Snorre's Portfolio</title>
           </Head>
           <Header />
-          <main className='container'>
             <Component {...pageProps} />
-          </main>
         </LangProvider>
       </ThemeProvider>
     </>

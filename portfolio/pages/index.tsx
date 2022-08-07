@@ -6,7 +6,7 @@ import { sortByDate } from '../utils'
 import content from '../public/content/content'
 import React, { useState, useEffect } from "react"
 import { LangContext } from '../components/LangContext'
-import Banner from '../components/banner'
+import Banner from "../components/Banner"
 
 export default function Home({ posts }: any) {
   const [animated, setAnimated] = useState(false);
