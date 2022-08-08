@@ -13,9 +13,6 @@ export default function Stack() {
             id="stack"
             >
                 <h1 className="text-5xl font-bold">Teknologier eg kan</h1>
-                <p className="w-11/12 md:max-w-xl text-xl text-center mt-10">
-                    amognus
-                </p>
                 <div className="flex flex-wrap justify-center mt-10">
                     {content.no.stack.tech.map((tech, index) => {
                         return (
@@ -40,10 +37,8 @@ export default function Stack() {
             className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col items-center justify-center font-dosis"
             id="stack"
             >
-                <h1 className="text-5xl font-bold">Teknologier eg kan</h1>
-                <p className="w-11/12 md:max-w-xl text-xl text-center mt-10">
-                    amognus
-                </p>
+                <h1 className="text-5xl font-bold">Technologies i know</h1>
+
                 <div className="flex flex-wrap justify-center mt-10">
                     {content.en.stack.tech.map((tech, index) => {
                         return (
@@ -52,7 +47,7 @@ export default function Stack() {
                                 index % 2 === 0 ? ' animate-float' : ' animate-refloat'
                             } w-40 h-40 bg-white shadow-2xl m-2 rounded-full flex items-center p-5 `}
                             >
-                            <LazyLoadImage src={tech.img} alt={tech.alt} />
+                                <LazyLoadImage src={tech.img} alt={tech.alt} />
                             </span>
                         );
                     })}

@@ -15,19 +15,19 @@ export default {
           title: 'Teknologioer eg kan',
           tech: [
             {
-              img: process.env.PUBLIC_URL + '/assets/django.png',
+              img: '/assets/django.png',
               alt: 'Django',
             },
             {
-              img: process.env.PUBLIC_URL + '/logo512.png',
+              img: '/assets/react.svg',
               alt: 'React',
             },
             {
-              img: process.env.PUBLIC_URL + '/assets/python.png',
+              img: '/assets/python.png',
               alt: 'Python',
             },
             {
-              img: process.env.PUBLIC_URL + '/assets/js.png',
+              img: '/assets/js.png',
               alt: 'Javascript',
             },
           ],
@@ -51,19 +51,19 @@ export default {
           title: 'Teknologioer eg kan',
           tech: [
             {
-              img: process.env.PUBLIC_URL + '/assets/django.png',
+              img: '/assets/django.png',
               alt: 'Django',
             },
             {
-              img: process.env.PUBLIC_URL + '/logo512.png',
+              img: '/assets/react.svg',
               alt: 'React',
             },
             {
-              img: process.env.PUBLIC_URL + '/assets/python.png',
+              img: '/assets/python.png',
               alt: 'Python',
             },
             {
-              img: process.env.PUBLIC_URL + '/assets/js.png',
+              img: '/assets/js.png',
               alt: 'Javascript',
             },
           ],
