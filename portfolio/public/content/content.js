@@ -8,6 +8,8 @@ export default {
         header: {
           img:
             '/images/Snorre.png',
+          imgDark: 
+              "/images/SnorreDark.png",
           text: ['Hello!', "I am Snorre Søvold.", 'I am '],
           btnText: 'What do i know?',
         },
@@ -21,6 +23,8 @@ export default {
         header: {
           img:
             '/images/Snorre.png',
+          imgDark: 
+            "/images/SnorreDark.png",
           text: ['Hallo!', "Eg er Snorre Søvold.", 'Eg er '],
           btnText: 'Hva kan jeg?',
         },
