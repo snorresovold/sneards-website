@@ -3,7 +3,7 @@ import Toggle from "./ToggleTheme"
 import React, { useEffect } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { LangContext } from "./LangContext"
-import content from "../public/content/content"
+import content from "../public/content"
 import ToggleTheme from './ToggleTheme';
 import ToggleLang from './ToggleLang';
 

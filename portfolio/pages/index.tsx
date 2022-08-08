@@ -3,10 +3,10 @@ import path from 'path'
 import matter from 'gray-matter'
 import Post from '../components/Post'
 import { sortByDate } from '../utils'
-import content from '../public/content/content'
 import React, { useState, useEffect } from "react"
 import { LangContext } from '../components/LangContext'
 import Banner from "../components/Banner"
+import Stack from "../components/Stack"
 
 export default function Home({ posts }: any) {
   const [animated, setAnimated] = useState(false);
@@ -18,6 +18,7 @@ export default function Home({ posts }: any) {
   return (
     <div>
       <Banner />
+      <Stack />
     </div>
   )
 }
