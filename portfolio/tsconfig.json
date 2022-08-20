@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/projects/[slug].jsx", "utils/index.js", "pages/_app.tsx", "components/ThemeContext.jsx", "components/Header.jsx", "pages/index.jsx", "components/LangContext.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/projects/[slug].jsx", "utils/index.js", "pages/_app.tsx", "components/ThemeContext.jsx", "components/Header.jsx", "pages/index.jsx", "components/LangContext.jsx", "components/Popup.tsx"],
   "exclude": ["node_modules"]
 }

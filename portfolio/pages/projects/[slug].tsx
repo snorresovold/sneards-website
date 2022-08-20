@@ -3,15 +3,24 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
+import React, {useEffect} from 'react'
+import { LangContext } from '../../components/LangContext'
+import Popup from '../../components/Popup'
+
 
 export default function PostPage({
   frontmatter: { title, date, cover_image },
   slug,
   content,
 }: any) {
+  const { lang, SetLang } = React.useContext(LangContext);
+  
   return (
     <>
-      <Link href='/projects'>
+    <div>
+      <Popup/>
+    </div>
+      <Link href='/'>
         <a className='btn btn-back'>Go Back</a>
       </Link>
       <div className='card card-page'>

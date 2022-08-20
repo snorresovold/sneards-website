@@ -1,9 +1,9 @@
 export default {
     en: {
         navItems: [
-            { text: "Projects", to: "Projects"},
-            { text: "About me", to: "About"},
-            { text: "Contact me", to: "Contact"},
+            { text: "Projects", to: "projects"},
+            { text: "About me", to: "about"},
+            { text: "Contact me", to: "contact"},
         ],
         header: {
           img:
@@ -37,9 +37,9 @@ export default {
     
     no: {
         navItems: [
-            { text: "Prosjekter", to: "Projects"},
-            { text: "Om meg", to: "About"},
-            { text: "Kontakt meg", to: "Contact"},
+            { text: "Prosjekter", to: "projects"},
+            { text: "Om meg", to: "about"},
+            { text: "Kontakt meg", to: "contact"},
         ],
         header: {
           img:

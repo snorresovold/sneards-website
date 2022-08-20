@@ -1,5 +1,3 @@
-
-
 import Link from 'next/link'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
