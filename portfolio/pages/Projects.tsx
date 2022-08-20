@@ -4,29 +4,41 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
-
 import { sortByDate } from '../utils'
+import { LangContext } from '../components/LangContext'
 
-function Projects({posts}: any) {
-  return (
-    <PostsList  posts={posts}/>
-  )
+function Projects({en, no}: any) {
+  const { lang, SetLang } = React.useContext(LangContext);
+  if (lang == "en") {
+    return (
+      <div className='dark:bg-gray-900 bg-white pl-16 pr-16'>
+        <PostsList  posts={en}/>
+      </div>
+    )
+  } else {
+    return (
+      <div className='dark:bg-gray-900 bg-white pl-16 pr-16'>
+        <PostsList  posts={no}/>
+      </div>
+    )
+  }
 }
 
 export default Projects
 
 export async function getStaticProps() {
   // Get files from the posts dir
-  const files = fs.readdirSync(path.join('posts'))
+  const Enfiles = fs.readdirSync(path.join('en'))
+  const Nofiles = fs.readdirSync(path.join('no'))
 
   // Get slug and frontmatter from posts
-  const posts = files.map((filename) => {
+  const EnPosts = Enfiles.map((filename) => {
     // Create slug
     const slug = filename.replace('.md', '')
 
     // Get frontmatter
     const markdownWithMeta = fs.readFileSync(
-      path.join('posts', filename),
+      path.join('en', filename),
       'utf-8'
     )
 
@@ -38,9 +50,29 @@ export async function getStaticProps() {
     }
   })
 
+  const NoPosts = Nofiles.map((filename) => {
+    // Create slug
+    const slug = filename.replace('.md', '')
+
+    // Get frontmatter
+    const markdownWithMeta = fs.readFileSync(
+      path.join('no', filename),
+      'utf-8'
+    )
+
+    const { data: frontmatter } = matter(markdownWithMeta)
+
+    return {
+      slug,
+      frontmatter,
+    }
+  })
+
+
   return {
     props: {
-      posts: posts.sort(sortByDate),
+      en: EnPosts.sort(sortByDate),
+      no: NoPosts.sort(sortByDate)
     },
   }
 }

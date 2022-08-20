@@ -11,7 +11,7 @@ export default function PostPage({
 }: any) {
   return (
     <>
-      <Link href='/'>
+      <Link href='/projects'>
         <a className='btn btn-back'>Go Back</a>
       </Link>
       <div className='card card-page'>
@@ -27,7 +27,10 @@ export default function PostPage({
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join('posts'))
+  const Enfiles = fs.readdirSync(path.join('en'))
+  const Nofiles = fs.readdirSync(path.join('no'))
+  const files = Enfiles.concat(Nofiles);
+  
 
   const paths = files.map((filename) => ({
     params: {
@@ -42,18 +45,31 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }: any) {
-  const markdownWithMeta = fs.readFileSync(
-    path.join('posts', slug + '.md'),
-    'utf-8'
-  )
-
-  const { data: frontmatter, content } = matter(markdownWithMeta)
-
-  return {
-    props: {
-      frontmatter,
-      slug,
-      content,
-    },
+  try {
+    const markdownWithMeta = fs.readFileSync(
+      path.join('en', slug + '.md'),
+      'utf-8'
+    )
+    const { data: frontmatter, content } = matter(markdownWithMeta)
+    return {
+      props: {
+        frontmatter,
+        slug,
+        content,
+      },
+    }
+  } catch {
+    const markdownWithMeta = fs.readFileSync(
+      path.join('no', slug + '.md'),
+      'utf-8'
+    )
+    const { data: frontmatter, content } = matter(markdownWithMeta)
+    return {
+      props: {
+        frontmatter,
+        slug,
+        content,
+      },
+    }
   }
 }

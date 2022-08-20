@@ -1,5 +1,4 @@
 import React from 'react'
-import PostCard from './PostCard'
 
 function PostsList() {
   return (

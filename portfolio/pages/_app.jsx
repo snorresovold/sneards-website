@@ -6,7 +6,7 @@ import Header from '../components/Header'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div className='dark:bg-gray-900 bg-white'>
     <ThemeProvider>
        <LangProvider>
           <Head>
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
         </LangProvider>
       </ThemeProvider>
-    </>
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ import React from "react";
 const getInitialLang = () => {
   if (typeof window !== 'undefined' && window.localStorage) {
     const storedPrefs = window.localStorage.getItem('current-lang');
-    console.log(storedPrefs)
+    //console.log(storedPrefs)
     if (storedPrefs === 'en')
     if (typeof storedPrefs === 'string') {
       return storedPrefs;
