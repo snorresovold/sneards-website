@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider>
        <LangProvider>
           <Head>
-            <title>Snorre's Portfolio</title>
+            <title>Snorre`&apos;`s Portfolio</title>
           </Head>
           <Header />
             <Component {...pageProps} />
