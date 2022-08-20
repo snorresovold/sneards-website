@@ -6,6 +6,7 @@ import Link from 'next/link'
 import React, {useEffect} from 'react'
 import { LangContext } from '../../components/LangContext'
 import Popup from '../../components/Popup'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 export default function PostPage({
@@ -16,22 +17,16 @@ export default function PostPage({
   const { lang, SetLang } = React.useContext(LangContext);
   
   return (
-    <>
-    <div>
-      <Popup/>
-    </div>
-      <Link href='/'>
-        <a className='btn btn-back'>Go Back</a>
-      </Link>
-      <div className='card card-page'>
-        <h1 className='post-title'>{title}</h1>
-        <div className='post-date'>Posted on {date}</div>
-        <img src={cover_image} alt='' />
-        <div className='post-body'>
-          <div className='post-body' dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+    <div className='text-gray-900 dark:text-white bg-white dark:bg-gray-900'>
+      <div className=''>
+        <h1 className='text-3xl text-center'>{title}</h1>
+        <div className='text-l text-center'>Posted on {date}</div>
+        <div className="flex justify-center items-center">
+          <LazyLoadImage src={cover_image}  className="object-cover w-2/3 rounded-xl"/>
         </div>
+          <div className='ml-64 mr-64 mt-12' dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
       </div>
-    </>
+    </div>
   )
 }
 

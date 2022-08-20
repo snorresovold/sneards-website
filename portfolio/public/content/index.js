@@ -2,7 +2,6 @@ export default {
     en: {
         navItems: [
             { text: "Projects", to: "projects"},
-            { text: "About me", to: "about"},
             { text: "Contact me", to: "contact"},
         ],
         header: {
@@ -38,7 +37,6 @@ export default {
     no: {
         navItems: [
             { text: "Prosjekter", to: "projects"},
-            { text: "Om meg", to: "about"},
             { text: "Kontakt meg", to: "contact"},
         ],
         header: {
@@ -70,5 +68,8 @@ export default {
           desc: `De programmerings språkene eg kan best er Python og Javascript/Typescript. Selv om eg har erfaring og er open til å lære andre språk som for eksempel Golang. Den tech stacken eg bruker mest for web prosjekter er Django for backend på grunn av rask og effektiv REST-API og Javascript med React til frontend fordi det er raskt og eg liker React bedre enn andre Frontend rammeverk.`,
         },
     },
-
+    
+    contact: {
+      img: '/images/Snorre2.jpg',
+    }
 }

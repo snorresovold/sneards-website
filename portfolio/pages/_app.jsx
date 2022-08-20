@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { ThemeProvider } from '../components/ThemeContext'
 import { LangProvider } from '../components/LangContext'
 import Header from '../components/Header'
+import dynamic from "next/dynamic"
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -20,4 +21,6 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default dynamic(() => Promise.resolve(MyApp), {
+  ssr: false,
+});

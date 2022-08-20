@@ -11,13 +11,13 @@ function Projects({en, no}: any) {
   const { lang, SetLang } = React.useContext(LangContext);
   if (lang == "en") {
     return (
-      <div className='dark:bg-gray-900 bg-white pl-16 pr-16'>
+      <div suppressHydrationWarning className='dark:bg-gray-900 bg-white pl-16 pr-16'>
           <PostsList  posts={en}/>
       </div>
     )
   } else {
     return (
-      <div className='dark:bg-gray-900 bg-white pl-16 pr-16'>
+      <div suppressHydrationWarning className='dark:bg-gray-900 bg-white pl-16 pr-16'>
           <PostsList  posts={no}/>
       </div>
     )
