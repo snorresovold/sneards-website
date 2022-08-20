@@ -1,8 +1,8 @@
 export default {
     en: {
         navItems: [
-            { text: "Projects", to: "Projects"},
-            { text: "Contact me", to: "Contact"},
+            { text: "Projects", to: "/Projects"},
+            { text: "Contact me", to: "/Contact"},
         ],
         header: {
           img:
@@ -36,8 +36,8 @@ export default {
     
     no: {
         navItems: [
-            { text: "Prosjekter", to: "Projects"},
-            { text: "Kontakt meg", to: "Contact"},
+            { text: "Prosjekter", to: "/Projects"},
+            { text: "Kontakt meg", to: "/Contact"},
         ],
         header: {
           img:
