@@ -24,17 +24,17 @@ export default function Header() {
                 {lang === "no" ? (
                     content.no.navItems.map((link, index) => {
                         return (
-                        <Link href={link.to} key={index} className="text-l dark:text-white dark:hover:text-white/75 text-gray-500 hover:text-gray-500/75 mr-4">
+                        <a href={link.to} key={index} className="text-l dark:text-white dark:hover:text-white/75 text-gray-500 hover:text-gray-500/75 mr-4">
                             {link.text}
-                        </Link>
+                        </a>
                         );
                     })
                         ) : (
                     content.en.navItems.map((link, index) => {
                         return (
-                        <Link href={link.to} key={index} className="text-l dark:text-white dark:hover:text-white/75 text-gray-500 hover:text-gray-500/75 mr-4">
+                        <a href={link.to} key={index} className="text-l dark:text-white dark:hover:text-white/75 text-gray-500 hover:text-gray-500/75 mr-4">
                             {link.text}
-                        </Link>
+                        </a>
                         );
                     })
                 )}
