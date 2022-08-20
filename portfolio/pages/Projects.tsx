@@ -12,13 +12,13 @@ function Projects({en, no}: any) {
   if (lang == "en") {
     return (
       <div className='dark:bg-gray-900 bg-white pl-16 pr-16'>
-        <PostsList  posts={en}/>
+          <PostsList  posts={en}/>
       </div>
     )
   } else {
     return (
       <div className='dark:bg-gray-900 bg-white pl-16 pr-16'>
-        <PostsList  posts={no}/>
+          <PostsList  posts={no}/>
       </div>
     )
   }
