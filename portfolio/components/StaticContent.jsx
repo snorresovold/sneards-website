@@ -1,6 +1,6 @@
 import { createElement, useRef, useState, useEffect } from 'react'
 
-export default function useStaticContent() {
+export function useStaticContent() {
   const ref = useRef(null)
   const [render, setRender] = useState(typeof window === 'undefined')
 
@@ -16,7 +16,7 @@ export default function useStaticContent() {
   return [render, ref]
 }
 
-export default function StaticContent({ children, element = 'div', ...props }) {
+export function StaticContent({ children, element = 'div', ...props }) {
   const [render, ref] = useStaticContent()
 
   // if we're in the server or a spa navigation, just render it
