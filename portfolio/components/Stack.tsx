@@ -9,7 +9,7 @@ export default function Stack() {
     if (lang === "no") {
         return (
             <div
-            className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 daak flex flex-col items-center justify-center font-dosis"
+            className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white daak flex flex-col items-center justify-center font-dosis"
             id="stack"
             >
                 <h1 className="text-5xl font-bold">Teknologier eg kan</h1>
