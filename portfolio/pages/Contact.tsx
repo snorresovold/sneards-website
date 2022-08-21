@@ -8,7 +8,7 @@ function Contact() {
 
   if (lang === "no") {
     return (
-      <div>
+      <div className='dark:bg-gray-900 bg-white'>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-900 antialiased mb-8">
           <h1 className="bg-white dark:bg-gray-900 text-5xl md:text-9xl font-bold py-20 text-center md:text-left dark:text-white text-gray-900">
           Kontakt
@@ -82,7 +82,7 @@ function Contact() {
     )
   } else {
     return (
-    <div>
+      <div className='dark:bg-gray-900 bg-white'>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-900 antialiased mb-8">
           <h1 className="bg-white dark:bg-gray-900 text-5xl md:text-9xl font-bold py-20 text-center md:text-left dark:text-white text-gray-900">
           Contact

@@ -7,7 +7,7 @@ import dynamic from "next/dynamic"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className='dark:bg-gray-900 bg-white'>
+    <div className='dark:bg-gray-900 bg-white min-h-screen'>
     <ThemeProvider>
        <LangProvider>
           <Head>
