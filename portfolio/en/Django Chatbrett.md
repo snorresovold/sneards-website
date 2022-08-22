@@ -12,9 +12,9 @@ Everything is made with Django and no 3rd party libraries
 
 I have used django's ORM instead of Their REST-API
 
-Har brukt Django sin Standard Django-HTML og standard Css for frontend.
+I have used Django HTML and css for a basic frontend
 
-Hvis eg skulle lagt noke likt dette i framtiden så hadde eg brukt Django sin REST API å koblet den opp til en Next Js frontend.
+If i were to make something like this in the future then I'd make a Django REST-API Backend and a Next JS Typescript frontend
 
 ***[A link to my project](https://github.com/snorresovold/django-chatboard)***
 
