@@ -2,7 +2,7 @@
 title: 'News scraper'
 date: '28 oct, 2022'
 excerpt: 'prosjekt kor eg leser informasjon fra forskjellige nyhets nettsider'
-cover_image: '/images/posts/NewsScraper.png'
+cover_image: '/images/posts/news.png'
 ---
 
 målet for detta prosjektet var å skrape informasjon fra forskjellige nyhets nettsider

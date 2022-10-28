@@ -2,7 +2,7 @@
 title: 'News scraper'
 date: '28 oct, 2022'
 excerpt: 'project where I scrape news from different websites'
-cover_image: '/images/posts/NewsScraper.png'
+cover_image: '/images/posts/news.png'
 ---
 
 the goal for this project was to be able to scrape different news websites 
@@ -16,6 +16,6 @@ then when new items were discovered I sent a post request to my database to stor
 
 <br>
 
-***[A link to my project](https://github.com/snorresovold/newswars)***
+***[A link to my project](https://github.com/snorresovold/opencv2-image-recognition)***
 
 <br>
