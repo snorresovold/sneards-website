@@ -4,7 +4,7 @@ import { ThemeProvider } from '../components/ThemeContext'
 import { LangProvider } from '../components/LangContext'
 import Header from '../components/Header'
 import dynamic from "next/dynamic"
-
+//sus
 function MyApp({ Component, pageProps }) {
   return (
     <div className='dark:bg-gray-900 bg-white min-h-screen'>
